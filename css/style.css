@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #5063C0;
+}
+
+.page {
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.intro {
+    background-color: #5063C0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.backl {
+    background-color: #5063C0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.qaz {
+    background-image: url(../media/ssd1.png);
+    
+
+}
