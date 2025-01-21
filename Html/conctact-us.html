@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="page2 intro2">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../Html/homepage.html">Home</a></li>
+                    <li><a href="../Html/about-us.html">About us</a></li>
+                    <li><a href="../Html/">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="kaz">
+            <a href="../Html/homepage.html"><img src="../media/ssd1.png" alt="">
+            </a>        
+        </div>
+
+        <div class="block">
+            <div class="question">For other questions</div>
+            <form id="contactForm">
+                <input type="text" name="number" id="phone" placeholder="Enter your phone number" class="input">
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="email">
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            // Обработчик отправки формы
+            const form = document.getElementById("contactForm");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault(); // Предотвращает стандартное поведение отправки формы
+
+                const phone = document.getElementById("phone").value;
+                const email = document.getElementById("email").value;
+
+                // Отправка данных в консоль
+                console.log("Phone:", phone);
+                console.log("Email:", email);
+
+                // Очистка формы
+                form.reset();
+                alert("Okay, we will contact you soon!"); 
+            });
+        </script>
+    </div>
+</body>
+</html>
